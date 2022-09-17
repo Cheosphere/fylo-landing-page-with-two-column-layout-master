@@ -27,14 +27,14 @@ formSubscribe.addEventListener('submit', function (event) {
 
     if (emailInputSubscribe.value === '') {
         errorMsgSubscribe.innerHTML = 'Email cannot be empty'
-        emailInputSubscribe.classList.add('error_msg_input')
+        emailInputSubscribe.classList.add('error_subscribe_input')
     } else if (emailInputSubscribe.value.indexOf("@") < 0) {
         errorMsgSubscribe.innerHTML = 'Please check your email'
     } else {
         alert('Email has been registered')
         emailInputSubscribe.value = ''
         errorMsgSubscribe.innerHTML = ''
-        emailInputSubscribe.classList.remove('error_msg_input')
+        emailInputSubscribe.classList.remove('error_subscribe_input')
     }
 
 })

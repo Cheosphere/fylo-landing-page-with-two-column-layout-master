@@ -38,6 +38,13 @@ body {
     color: var(--very-dark-blue);
 }
 
+main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 /* HEADER AREA STYLES */
 .header {
     width: 100%;
@@ -253,15 +260,6 @@ body {
     border-color: darkturquoise;
 }
 
-.content_info_link_wrapper svg use {
-    transition: all .2s ease-in-out;
-}
-
-.content_info_link_wrapper svg use:hover {
-    fill: darkturquoise;
-    cursor: pointer;
-}
-
 .content_info_link {
     margin-right: .4rem;
     font-family: 'Open Sans', sans-serif;
@@ -275,8 +273,13 @@ body {
     color: darkturquoise;
 }
 
-.content_info_link_wrapper svg {
-    margin-top: .25rem;
+.content_info_link_wrapper img {
+    position: relative;
+    top: .25rem;
+}
+
+.content_info_link_wrapper img:hover {
+    cursor: pointer;
 }
 
 .content_info_card {
@@ -416,6 +419,10 @@ body {
     color: var(--light-gray);
 }
 
+.error_subscribe_input {
+    border: 2px solid red;
+}
+
 .subscribe_content_form_btn {
     width: 200px;
     height: 48px;
@@ -449,7 +456,7 @@ body {
     max-width: 1440px;
     display: flex;
     justify-content: space-between;
-    padding: 0 5.3rem;
+    padding: 0 5.3rem 0 5.2rem;
     font-family: 'Open Sans', sans-serif;
     color: white;
 }
@@ -458,21 +465,23 @@ body {
 .footer_content_contact {
     width: 30%;
     min-width: 220px;
-    height: 136px;
-    margin-top: 6.78rem;
+    height: 142px;
+    margin-top: 6.5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.footer_content_contact svg {
-    margin-right: 1.08rem;
-    margin-top: .1rem;
+.footer_content_contact img {
+    margin-right: 1.1rem;
+    position: relative;
+    top: 3px;
 }
 
 .footer_content_contact_logo {
-    margin-left: .05rem;
-    transform: scale(1.06);
+    width: 175px;
+    position: relative;
+    right: 4px;
 }
 
 .footer_content_contact_phone,
