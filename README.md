@@ -6,6 +6,9 @@ El desafío es construir esta página de destino y lograr que se parezca lo más
 - CSS
 - JS Vanilla
 
+![desktop-preview](https://user-images.githubusercontent.com/112582420/190839368-decb935a-b765-4503-9cfb-9aff6b651f09.jpg)
+
+
 # Guía de Estilo
 
 ## Diseño
