@@ -5,8 +5,6 @@ const formSubscribe = document.getElementById('subscribe_form')
 const errorMsgSpan = document.getElementById('error_msg_span')
 const errorMsgSubscribe = document.getElementById('error_msg_subscribe')
 
-console.log(svgItem)
-
 formHeader.addEventListener('submit', function (event) {
     event.preventDefault()
 
@@ -40,3 +38,4 @@ formSubscribe.addEventListener('submit', function (event) {
     }
 
 })
+
